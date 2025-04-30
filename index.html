@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 0.5em;
+      border: 2px solid transparent;
+    }
+    nav a:focus {
+      border: 2px solid black;
+      background-color: rgb(224, 242, 255);
+      outline: none;
+    }
+    a:focus {
+      background-color: rgb(224, 242, 255);
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: black;
+      color: black;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    footer {
+      margin-top: 2rem;
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" accesskey="h">Home</a></li>
+      <li><a href="things-to-read.html" accesskey="t">Things to Read</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" role="main">
+    <h1>Hello, I'm Younes!</h1>
+    <p>Welcome to my very first website! I'm excited to be learning about web development.</p>
+
+    <div>
+      <img src="younes.jpg" alt="A picture of me" width="200" />
+    </div>
+
+    <h2>My Interests</h2>
+    <ul>
+      <li>Learning new things</li>
+      <li>Cooking & making desserts</li>
+      <li>Hiking</li>
+    </ul>
+
+    <p>Contact me (coming soon!)</p>
+  </main>
+
+  <footer>
+    <h2>Keyboard Accessibility Instructions</h2>
+    <p>This website is fully navigable using a keyboard. Here's how to access everything:</p>
+    <ul>
+      <li>Press <strong>Tab</strong> to move forward through links and interactive elements.</li>
+      <li>Press <strong>Shift + Tab</strong> to move backward.</li>
+      <li>Press <strong>Enter</strong> to activate a selected link.</li>
+      <li>Use <strong>Alt + H</strong> (Windows) or <strong>Ctrl + Option + H</strong> (Mac) to go directly to the Home page.</li>
+      <li>Use <strong>Alt + T</strong> to go directly to the Things to Read page.</li>
+      <li>A “Skip to main content” link appears when using the keyboard, so you can bypass the navigation menu.</li>
+    </ul>
+
+    <h3>Keyboard Usability Principles Applied</h3>
+    <ul>
+      <li><strong>Affordance:</strong> Navigation elements are styled to look and behave like links, giving cues for interaction.</li>
+      <li><strong>Visibility:</strong> Focus indicators (highlight and border) clearly show which element is selected.</li>
+      <li><strong>Feedback:</strong> Visual changes confirm the current focus point as users tab through the site.</li>
+      <li><strong>Constraints:</strong> Only interactive elements are tabbable, simplifying navigation.</li>
+      <li><strong>Mapping:</strong> Page layout matches typical web expectations, helping orientation.</li>
+      <li><strong>Consistency:</strong> Same keyboard shortcuts and tab order are used across all pages.</li>
+    </ul>
+
+    <p>This approach ensures keyboard users can fully navigate and interact with this website independently.</p>
+  </footer>
+</body>
+</html>
+
