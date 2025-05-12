@@ -7,44 +7,81 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #eafdff;
+      color: black;
     }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 1rem;
       padding: 0;
     }
+
     nav a {
-      text-decoration: none;
       padding: 0.5em;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #0c3c78;
+      background-color: #e0f0ff;
       border: 2px solid transparent;
+      transition: background 0.3s;
     }
+
+    nav a:hover,
     nav a:focus {
-      border: 2px solid black;
-      background-color: rgb(224, 242, 255);
+      background-color: #b3e5ff;
+      border: 2px solid #0c3c78;
       outline: none;
     }
-    a:focus {
-      background-color: rgb(224, 242, 255);
-    }
-    li {
-      margin-bottom: 1rem;
-    }
-    .desc {
-      font-size: 0.9em;
-      color: #555;
-    }
+
     .skip-link {
       position: absolute;
       top: -40px;
       left: 0;
-      background: black;
-      color: black;
+      background: #000;
+      color: #fff;
       padding: 8px;
       z-index: 100;
     }
+
     .skip-link:focus {
       top: 0;
+    }
+
+    h1 {
+      color: #003366;
+    }
+
+    .scroll-list {
+      max-height: 400px;
+      overflow-y: auto;
+      padding: 1rem;
+      background-color: hsl(330, 95%, 95%);
+      border: 1px solid #ccc;
+      margin-top: 1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li a {
+      color: #410ecd;
+    }
+
+    li a:visited {
+      color: #6b3fa0;
+    }
+
+    .desc {
+      font-size: 0.9em;
+      color: black;
     }
   </style>
 </head>
@@ -60,30 +97,31 @@
 
   <main id="main-content" role="main">
     <h1>Interesting Things to Read</h1>
-    <ul>
-      <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a>
-        <p class="desc">Official documentation for HTML, CSS, JavaScript and more.</p></li>
-      <li><a href="https://www.bbc.com/" target="_blank">BBC News</a>
-        <p class="desc">Global news coverage including politics, science, and culture.</p></li>
-      <li><a href="https://www.nasa.gov/" target="_blank">NASA</a>
-        <p class="desc">Explore the universe and discover NASA missions and space tech.</p></li>
-      <li><a href="https://www.theverge.com/" target="_blank">The Verge</a>
-        <p class="desc">Technology, science, and digital culture news and reviews.</p></li>
-      <li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a>
-        <p class="desc">Explore thousands of recipes, meal ideas, and cooking tips.</p></li>
-      <li><a href="https://www.lonelyplanet.com/" target="_blank">Lonely Planet</a>
-        <p class="desc">Trusted travel guides and inspiration for global destinations.</p></li>
-      <li><a href="https://petapixel.com/" target="_blank">PetaPixel</a>
-        <p class="desc">Photography news, tutorials, and equipment reviews.</p></li>
-      <li><a href="https://pitchfork.com/" target="_blank">Pitchfork</a>
-        <p class="desc">Music journalism with reviews and insights into emerging artists.</p></li>
-      <li><a href="https://www.history.com/" target="_blank">History.com</a>
-        <p class="desc">Learn about historical events, people, and timelines.</p></li>
-      <li><a href="https://www.goodreads.com/" target="_blank">Goodreads</a>
-        <p class="desc">Track your reading, review books, and discover new favorites.</p></li>
-    </ul>
+    <div class="scroll-list">
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a>
+          <p class="desc">Official documentation for HTML, CSS, JavaScript and more.</p></li>
+        <li><a href="https://www.bbc.com/" target="_blank">BBC News</a>
+          <p class="desc">Global news coverage including politics, science, and culture.</p></li>
+        <li><a href="https://www.nasa.gov/" target="_blank">NASA</a>
+          <p class="desc">Explore the universe and discover NASA missions and space tech.</p></li>
+        <li><a href="https://www.theverge.com/" target="_blank">The Verge</a>
+          <p class="desc">Technology, science, and digital culture news and reviews.</p></li>
+        <li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a>
+          <p class="desc">Explore thousands of recipes, meal ideas, and cooking tips.</p></li>
+        <li><a href="https://www.lonelyplanet.com/" target="_blank">Lonely Planet</a>
+          <p class="desc">Trusted travel guides and inspiration for global destinations.</p></li>
+        <li><a href="https://petapixel.com/" target="_blank">PetaPixel</a>
+          <p class="desc">Photography news, tutorials, and equipment reviews.</p></li>
+        <li><a href="https://pitchfork.com/" target="_blank">Pitchfork</a>
+          <p class="desc">Music journalism with reviews and insights into emerging artists.</p></li>
+        <li><a href="https://www.history.com/" target="_blank">History.com</a>
+          <p class="desc">Learn about historical events, people, and timelines.</p></li>
+        <li><a href="https://www.goodreads.com/" target="_blank">Goodreads</a>
+          <p class="desc">Track your reading, review books, and discover new favorites.</p></li>
+      </ul>
+    </div>
   </main>
 </body>
 </html>
-
 
