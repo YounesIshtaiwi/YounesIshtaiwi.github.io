@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Desserts from Around the World</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #3a2c1a;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    nav {
+      background-color: #fde2b1;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      padding: 0.5em;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #3A2C1A;
+      background-color: #fff3e0;
+      border: 2px solid transparent;
+      transition: background 0.3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #fddbad;
+      border: 2px solid #683d09;
+      outline: none;
+    }
+
+    header {
+      background: linear-gradient(#ffe5b4, #fff0da);
+      padding: 2rem;
+      text-align: center;
+      color: #4608AF;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      color: #4608AF;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4608AF;
+      margin-top: 2rem;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid #d6bfa7;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .caption {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #7a5e3c;
+      margin-top: 0.5rem;
+    }
+
+    .important {
+      font-size: 1.25rem;
+      background-color: #fff3e0;
+      padding: 1rem;
+      border-left: 6px solid #d2691e;
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #fae5d3;
+      color: #3a2c1a;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" accesskey="h">Home</a></li>
+      <li><a href="things-to-read.html" accesskey="t">Things to Read</a></li>
+      <li><a href="desserts.html" accesskey="d">Desserts</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1><span class="highlight">Sweet</span> Moments in Every Bite</h1>
+    <p>Three must-try desserts from different cultures — rich, cozy, and full of flavor.</p>
+  </header>
+
+  <main id="main-content" role="main">
+    <section>
+      <h2>1. Kunafa: Crispy and Creamy</h2>
+      <p>Kunafa is a beloved Middle Eastern dessert made from shredded pastry dough, soaked in sugar syrup, and filled with soft cheese or custard. Its crispy edges and melty center make it an unforgettable treat.</p>
+      <div class="image-section">
+        <img src="kunafa.jpg" alt="A golden, syrup-soaked Kunafa" />
+        <p class="caption">A warm slice of Kunafa with a cheese pull — best served fresh.</p>
+      </div>
+    </section>
+
+    <div class="important">
+      Don’t let the intricate look fool you — with the right ingredients, Kunafa is surprisingly easy to make at home!
+    </div>
+
+    <section>
+      <h2>2. Baklava: Layers of Delight</h2>
+      <p>Baklava is made from ultra-thin layers of phyllo dough, brushed with butter, stacked with chopped nuts, and drenched in a sweet syrup. A classic in Turkish, Greek, and Middle Eastern cuisines.</p>
+      <div class="image-section">
+        <img src="baklava.jpg" alt="Slices of layered baklava with chopped pistachios" />
+        <p class="caption">Baklava offers a perfect crunch and sweet finish in every bite.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Banana Bread: Comfort in a Loaf</h2>
+      <p>A Western classic, banana bread is moist, fluffy, and rich in flavor. It’s perfect for breakfast, snack time, or dessert. Add walnuts or chocolate chips for extra goodness!</p>
+      <div class="image-section">
+        <img src="banana-bread.jpg" alt="Freshly baked banana bread sliced on a wooden board" />
+        <p class="caption">Banana bread: A warm, nostalgic treat — especially when shared.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Younes — Baked with love, shared with joy 🍰</p>
+  </footer>
+</body>
+</html>
+
